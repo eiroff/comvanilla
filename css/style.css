@@ -13,7 +13,7 @@ html, body, main {
 }
 
 body {
-	background: rgb(239,187,1);
+	background: rgba(255,223,47,1);
 	background: linear-gradient(180deg, rgba(239,187,1,1) 29%, rgba(255,223,47,1) 100%);
 }
 
