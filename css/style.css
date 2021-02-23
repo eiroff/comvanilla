@@ -23,6 +23,8 @@ main {
     flex-direction: column;
     justify-content: space-around;
     color: #3D3D3D;
+	background-image: url(../images/circles.svg);
+	background-size: cover;
 }
 
 main address {
