@@ -67,3 +67,13 @@ main h1 {
 	font-size: 48px;
 	text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+	main h1 {
+		font-size: 37px;
+	}
+	
+	address a {
+		font-size: 16px;
+	}
+}
