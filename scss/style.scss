@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, main { 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+	font-family: "Ubuntu";
+}
+
+body {
+	//background: rgba(255,223,47,1);
+	//background: linear-gradient(180deg, rgba(239,187,1,1) 29%, rgba(255,223,47,1) 100%);
+}
+
+main {
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #3D3D3D;
+	//background-image: url(../images/circles.svg);
+	background-size: cover;
+}
+
+main address {
+	text-align: center;
+}
+
+main a {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 22px;
+	color: #3D3D3D;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main a:first-child:before {
+	content: "";
+	height: 22px;
+	width: 22px;
+    margin-right: 10px;
+    display: inline-block;
+	background-image: url(../images/email.svg);
+}
+
+main a:last-child:before {
+	content: "";
+	height: 22px;
+	width: 22px;
+    margin-right: 10px;
+    display: inline-block;
+	background-image: url(../images/phone.svg);
+}
+
+main img {
+	max-height: 150px;
+}
+
+
+@media screen and (max-width: 768px) {
+	main h1 {
+		font-size: 37px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	address a {
+		font-size: 16px;
+	}
+}
+
+//
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+
+$black: #1e1e1e;
+$yellow: #FFD31F;
+
+body {
+	font-family: "Blinker";
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:  0 80px;
+	height: 111px;
+}
+
+nav {
+	img {
+		margin: 16px 0;
+		width:  205px;
+		height: 79px;
+	}
+	a {
+		display: inline-block;
+		color: $black;
+		font-size: 18px;
+		text-decoration: none;
+		margin-right: 16px;
+		&:before{
+			content: '';
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			position: relative;
+		}
+		&:hover {
+				&:before{
+					content: '';
+					display: inline-block;
+					border-radius: 50px;
+					width: 25px;
+					height: 25px;
+					background-color: $yellow;
+					position: relative;
+			    z-index: -1;
+			    top: 6px;
+			    left: 13px;
+				}
+		}
+	}
+}
+
+.selected-page {
+	&:before{
+		content: '';
+		display: inline-block;
+		border-radius: 50px;
+		width: 25px;
+		height: 25px;
+		background-color: $yellow;
+		position: relative;
+    z-index: -1;
+    top: 6px;
+    left: 13px;
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+main {
+	background-image: url('../images/home_extendida 1.png');
+	height: 808px;
+	padding: 0 80px;
+	h1{
+		font-size: 72px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
