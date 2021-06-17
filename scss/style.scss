@@ -9,23 +9,9 @@ html, body, main {
 	margin:0; 
 	padding:0; 
 	height:100%; 
-	font-family: "Ubuntu";
+	font-family: 'Blinker';
 }
 
-body {
-	//background: rgba(255,223,47,1);
-	//background: linear-gradient(180deg, rgba(239,187,1,1) 29%, rgba(255,223,47,1) 100%);
-}
-
-main {
-	display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  color: #3D3D3D;
-	//background-image: url(../images/circles.svg);
-	background-size: cover;
-}
 
 main address {
 	text-align: center;
@@ -83,6 +69,7 @@ main img {
 
 $black: #1e1e1e;
 $yellow: #FFD31F;
+$blue: #28697C;
 
 body {
 	font-family: "Blinker";
@@ -152,13 +139,60 @@ ul {
 }
 
 main {
-	background-image: url('../images/home_extendida 1.png');
-	height: 808px;
-	padding: 0 80px;
 	h1{
 		font-size: 72px;
 		font-weight: bold;
 		text-align: left;
+		max-width: 630px;
+		color: $black;
 	}
+}
+
+.mdc-button:not(:disabled) {
+	font-family: 'Blinker';
+	background-color: $black;
+	color: $yellow;
+	border-radius: 40px;
+  padding: 20px 40px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.mdc-button:hover {
+	background-color: $blue;
+}
+
+.opening {
+	height: 810px;
+	display: flex;
+  align-items: center;
+  background-image: url('../images/home_extendida 1.png');
+	padding: 0 80px;
+	&:after {
+    content: '';
+    display: block;
+    border-radius: 16%;
+    width: 100%;
+    height: 200px;
+    background-color: #f9cc48;
+    position: absolute;
+    left: 0;
+    bottom: -156px;
+    z-index: -1;
+	}
+}
+
+.content-opening {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+	font-size: 40px;
+	color:  $black;
+	text-align: center;
 }
 
