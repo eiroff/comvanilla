@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
 
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+
 $black: #1e1e1e;
 $yellow: #FFD31F;
 $blue: #28697C;
@@ -64,11 +68,42 @@ body {
 }
 
 header {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 9;
+}
+
+main {
+	padding-top: 142px;
+}
+
+.main-menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin:  0 80px;
 	height: 111px;
+}
+
+.configs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+	height: 30px;
+	padding: 0 80px;
+	border-bottom: 0.5px solid #eaeaea;
+
+	select {
+		border-color: transparent;
+		font-size: 12px;
+		font-family: "Open Sans";
+	}
+
+	#language option:before { 
+		content: "";
+		background-image:url('../images/pt.svg'); 
+	}
 }
 
 nav {
@@ -453,7 +488,7 @@ footer {
 }
 
 .contact-page {
-	padding: 0 80px;
+	padding: 200px 80px 0;
 
 	h1 {
 		text-align: center;
@@ -551,4 +586,27 @@ footer {
 			text-align: left;
 		}
 	}
+}
+
+.cookies {
+	display: flex;
+	align-items: center;
+  padding: 10px 20px;
+  width: 1060px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-radius: 8px;
+  p {
+  	font-size: 14px;
+  }
+}
+
+.button-txt:not(:disabled) {
+	background-color: transparent;
+	color: $black;
 }
