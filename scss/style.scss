@@ -74,6 +74,10 @@ header {
   z-index: 9;
 }
 
+.logo-mobile, .menu-mobile {
+	display: none;
+}
+
 main {
 	padding-top: 142px;
 }
@@ -106,7 +110,7 @@ main {
 	}
 }
 
-nav {
+nav.menu-desktop {
 	img {
 		margin: 16px 0;
 		width:  205px;
@@ -224,6 +228,7 @@ article {
 }
 
 .services {
+	text-align: center;
 	ul {
 		padding: 0;
     width: 100%;
@@ -372,6 +377,11 @@ article {
 		display: flex;
 		overflow: hidden;
 		padding: 0 0 10px 10px;
+	}
+
+	.button-txt {
+		float: right;
+		padding: 20px;
 	}
 
 	article {
@@ -609,4 +619,211 @@ footer {
 .button-txt:not(:disabled) {
 	background-color: transparent;
 	color: $black;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		position: initial;
+		.configs {
+			padding: 0 10px;
+		}
+	}
+
+	.logo-desktop, .menu-desktop {
+		display: none;
+	}
+	.logo-mobile, .menu-mobile {
+		display: block;
+	}
+
+	.menu-mobile {
+		position: absolute;
+    right: 20px;
+		img {
+			width: 30px;
+		}
+	}
+
+	.main-menu {
+		justify-content: center;
+	}
+
+	main {
+		padding: 0;
+
+		h1 {
+			font-size: 32px;
+			text-align: center;
+			margin-top: 240px;
+		}
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	.mdc-touch-target-wrapper {
+		text-align: center;
+	}
+
+	.opening {
+		height: 400px;
+		background-color: #f9cc48;
+		background-size: 120%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 0 25px;
+    &:after {
+    	bottom: 63px;
+    }
+	}
+
+	.services {
+		h2 {
+			margin-top: 100px;
+		}
+
+		ul {
+			flex-wrap: wrap;
+		}
+
+		li {
+			width: 110px;
+			justify-content: end;
+			text-align: center;
+			div, div:before{
+				width: 89px;
+				height: 89px;
+			}
+			img {
+				max-width: 56px;
+				max-height: 56px;
+			}
+		}
+	}
+
+	h3 {
+		font-size: 20px;
+		margin: 0;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	article {
+		padding: 0 25px;
+	}
+
+	.how-we-work-content {
+		flex-direction: column;
+		padding: 0 25px;
+	}
+
+	.how-we-work {
+		article {
+			flex-direction: column;
+			width: 100%;
+
+			img {
+				height: 110px;
+			} 
+
+			p {
+				text-align: center;
+			}
+
+			&:last-child {
+				margin-top: 40px;
+			}
+		}
+	}
+
+	.testimonials {
+		padding: 0 0 80px 0;
+		h2 {
+			padding-top: 20px;
+		}
+		.testimonial-1, .testimonial-2 {
+			min-width: 272px;
+		}
+
+		.carousel {
+			padding: 0 25px;
+		}
+
+		.static-container {
+			overflow: hidden;
+		}
+	}
+
+	.articles {
+		padding: 0 0 0 25px
+	}
+
+	.posts-container .static-container {
+		padding-left: 0;
+	}
+	.posts-container .arrow {
+		right: 0;
+	}
+
+	.cta {
+		padding: 0 50px;
+    margin-top: 100px;
+	}
+
+	footer {
+		margin-top: -58px;
+
+		.contact, .newsletter {
+			flex-direction: column;
+			padding: 0 25px;
+			margin: 0;
+
+			p {
+				font-size: 20px;
+				text-align: center;
+			}
+		}
+
+		.newsletter {
+			.mdc-touch-target-wrapper {
+				margin-top: 20px;
+			}
+		}
+
+		.contact {
+			text-align: center;
+			address {
+				align-items: center;
+				a {
+					font-size: 20px;	
+				}
+			}
+		}
+
+		.footer-infos:before {
+			top: -63px;
+		}
+	}
+
+  .cookies {
+  	left: 0;
+  	transform: inherit;
+  	width: auto;
+  	flex-direction: column;
+  	margin: 15px;
+  	padding: 5px 15px;
+  	p {
+  		font-size: 12px;
+  	}
+  	.mdc-button:not(:disabled) {
+  		font-size: 16px;
+  	}
+  }
+
+  .services, .how-we-work, .testimonials, .articles, h2 {
+  	margin-top: 60px;
+  }
 }
