@@ -28,18 +28,18 @@
 					  </div>
 				</div>
 				<div class="main-menu">
-					<a href="index.html">
+					<a href="#">
 						<img src="images/comvanilla-logo.svg" class="logo-desktop">
 						<img src="images/logo-mobile.svg" class="logo-mobile">
 					</a>
 					<nav class="menu-mobile closed">
-						<a href="index.html">
+						<a href="#">
 							<img src="images/nav-menu.svg">
 						</a>
 					</nav>
 
 					<nav class="menu-mobile open">
-						<a href="index.html">
+						<a href="#">
 							<img src="images/logo-mobile.svg" class="logo-mobile">
 						</a>
 						<a href="#">
@@ -48,12 +48,12 @@
 						<ul>
 							<li>
 								<a href="index.html">Home</a>
-								<a href="services.html">Serviços</a>
-								<a href="how-we-work.html">Como trabalhamos</a>
+								<a href="services.html" class="selected-page">Serviços</a>
+								<a href="how-we-work.html" >Como trabalhamos</a>
 								<a href="#">Carreiras</a>
 								<a href="#">Blog</a>
 								<a href="#">Quem somos</a>
-								<a href="contact.html" class="selected-page">Contato</a>
+								<a href="contact.html">Contato</a>
 							</li>
 						</ul>
 					</nav>
@@ -61,81 +61,81 @@
 						<ul>
 							<li>
 								<a href="index.html">Home</a>
-								<a href="services.html">Serviços</a>
+								<a href="services.html" class="selected-page">Serviços</a>
 								<a href="how-we-work.html">Como trabalhamos</a>
 								<a href="#">Carreiras</a>
 								<a href="#">Blog</a>
 								<a href="#">Quem somos</a>
-								<a href="#" class="selected-page">Contato</a>
+								<a href="contact.html">Contato</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 			</header>
 			
-			<main role="main" class="contact-page">
+			<main role="main" class="services-page">
 				<div class="breadcrumb">
 					<a href="index.html">Home</a>
-					<p>Contato</p>
+					<p>Serviços</p>
 				</div>
 
 				<h1>
-					Nos envie uma mensagem
+					O que podemos entregar
 				</h1>
 
-				<div class="contact-wrapper">
-					<div class="form-content">
-						<label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
-						  <span class="mdc-notched-outline">
-						    <span class="mdc-notched-outline__leading"></span>
-						    <span class="mdc-notched-outline__trailing"></span>
-						  </span>
-						  <input class="mdc-text-field__input" type="text" aria-label="Label" placeholder="Digite seu nome">
-						</label>
+				<section class="services">
+					<article>
+						<ul>
+							<li>
+								<div><img src="images/devops.svg"></div>
+								<h3>DevOps</h3>
+								<p>Donec sollicitudin, massa eu molestie luctus, neque risus eleifend enim, vel mollis tortor dolor consectetur erat</p>
+							</li>
+							<li>
+								<div><img src="images/ui-ux-design.svg"></div>
+								<h3>UI/UX Design</h3>
+								<p>Donec sollicitudin, massa eu molestie luctus, neque risus eleifend enim, vel mollis tortor dolor consectetur erat</p>
+							</li>
+							<li>
+								<div><img src="images/apps.svg"></div>
+								<h3>Apps</h3>
+								<p>Donec sollicitudin, massa eu molestie luctus, neque risus eleifend enim, vel mollis tortor dolor consectetur erat</p>
+							</li>
+							<li>
+								<div><img src="images/api.svg"></div>
+								<h3>Integração de API</h3>
+								<p>Donec sollicitudin, massa eu molestie luctus, neque risus eleifend enim, vel mollis tortor dolor consectetur erat</p>
+							</li>
+						</ul>
+					</article>
+				</section>
 
-						<label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label">
-						  <span class="mdc-notched-outline">
-						    <span class="mdc-notched-outline__leading"></span>
-						    <span class="mdc-notched-outline__trailing"></span>
-						  </span>
-						  <input class="mdc-text-field__input" type="text" aria-label="Label" placeholder="Digite seu e-mail">
-						</label>
-
-						<label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label">
-						  <span class="mdc-notched-outline">
-						    <span class="mdc-notched-outline__leading"></span>
-						    <span class="mdc-notched-outline__trailing"></span>
-						  </span>
-						  <span class="mdc-text-field__resizer">
-						    <textarea class="mdc-text-field__input" rows="8" cols="40" aria-label="Label" placeholder="Digite sua mensagem"></textarea>
-						  </span>
-						</label>
-
-						<div class="cta">
-							<div class="mdc-touch-target-wrapper">
-							  <button class="mdc-button mdc-button--touch">
-							    <span class="mdc-button__ripple"></span>
-							    <span class="mdc-button__label">Fale conosco</span>
-							    <span class="mdc-button__touch"></span>
-							  </button>
-							</div>	
-						</div>
-					</div>		
-
-					<div class="contact-content">
-						<h2>Nossos contatos</h2>
-						
-						<address>
-							<a href="mailto:contato@comvanilla.com.br">contato@comvanilla.com.br</a>
-							<a href="tel:5548998306201">+55 48 9983-06201</a>
-							<p>Rod. Amaro Antônio Vieira, <br>
-							2463 - Itacorubi <br>
-							Florianópolis - SC</p>
-						</address>
-
-					</div>
-
-				</div>
+				<section class="tech">
+					<h2>Tecnologias que usamos</h2>
+					<article>
+						<ul>
+							<li>
+								<img src="images/react.svg">
+							</li>
+							<li>
+								<img src="images/angular.svg">
+							</li>
+							<li>
+								<img src="images/vue.svg">
+							</li>
+							<li>
+								<img src="images/react.svg">
+							</li>
+							<li>
+								<img src="images/angular.svg">
+							</li>
+							<li>
+								<img src="images/vue.svg">
+							</li>
+						</ul>
+					</article>
+					
+				</section>
 				
 			</main>
 
