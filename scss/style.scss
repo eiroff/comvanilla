@@ -1001,7 +1001,31 @@ footer {
   	margin-top: 60px;
   }
 
-  .contact-page, .how-we-work-page {
+  .services-page {
+  	.services {
+  		margin: 0;
+  		  ul {
+		  		flex-direction: column;
+		  		align-items: center;
+		  	}
+  	}
+
+  	li {
+  		width: auto;
+  		margin-top: 35px;
+  	}
+
+  	.tech {
+  		ul {
+  			justify-content: flex-start;
+		    padding: 15px;
+		    margin-bottom: 80px;
+		    overflow: scroll;
+  		}
+  	}
+  }
+
+  .contact-page, .how-we-work-page, .services-page {
   	padding: 20px 25px 0;
   	h1 {
   		margin-top: 20px;
