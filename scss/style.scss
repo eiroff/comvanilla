@@ -1007,6 +1007,49 @@ footer {
   		margin-top: 20px;
   	}
 
+  	h2 {
+  		text-align: center;
+  		margin-top:  0;
+  	}
+
+  	.breadcrumb {
+  		padding: 0;
+  	}
+
+  	.complete-project, .extension {
+  		flex-direction: column;
+  		align-items: center;
+  		div {
+  			width: 100%;
+  		}
+
+  		img[src*="circles"] {
+  			display: none;
+  		}
+
+  	}
+
+  	.compare {
+  		padding: 0;
+  		margin-bottom: 60px;
+
+  		p {
+  			padding: 0 30px;
+  		}
+
+  		.modality {
+  			flex-direction: column;
+
+  			>div {
+  				margin: 10px 15px;
+
+  				h3 {
+  					margin-top: 10px;
+  				}
+  			}
+  		}
+  	}
+
   	.contact-wrapper {
   		flex-direction: column;
   		h2 {
