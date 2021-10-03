@@ -497,7 +497,7 @@ footer {
 	}
 }
 
-.contact-page, .how-we-work-page, .services-page {
+.contact-page, .how-we-work-page, .services-page, .about-us-page {
 	padding: 200px 80px 0;
 
 	h1 {
@@ -736,6 +736,58 @@ footer {
 		}
 	}
 
+}
+
+.about-us-page {
+	  background-image: url('../images/about-us-bg.png');
+	  background-size: contain;
+    background-repeat: no-repeat;
+	  h1 {
+	  	text-align: left;
+    	max-width: 600px;
+    	margin-top: 110px;
+	  }
+	  .mission {
+		text-align: center;
+		margin-top: 150px;
+			ul {
+				padding: 0;
+		    width: 100%;
+		    display: flex;
+		    justify-content: space-around;
+		  }
+		  li {
+		  	display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+
+		  	div {
+		  		width: 197px;
+			    height: 197px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+		    	&:before {
+			  		content: '';
+			  		width: 197px;
+			  		height: 197px;
+			  		display: block;
+			  		background-color: $yellow;
+			  		border-radius: 100%;
+				    position: absolute;
+				    z-index: -1;
+				  }
+		  	}
+		  }
+		}
+
+	.testimonials {
+		background: none;
+		.arrow {
+			right: -55px;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
